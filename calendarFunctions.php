@@ -24,16 +24,6 @@ function calendar(int $month, int $year, bool $showYear) : string {
     $nombre_jours_mois = date('t', $date);
 
     $html = <<<HTML
-    <!doctype html>
-    <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <title> My first HTML5 page </title>
-            <link rel="stylesheet" media="screen" href="css/style.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.css" />
-        </head>
-        
-        <body>
             <table>
                 <tr>
                     <th colspan="7">$nom_mois</th>
@@ -82,8 +72,6 @@ HTML;
 
     $html .= <<<HTML
             </table>
-        </body>
-    </html>
 HTML;
 
     return $html;
