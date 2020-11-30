@@ -1,3 +1,27 @@
+h1 {
+    background-color : rgb(100, 99, 102);
+    font-size : 30px !important;
+    color : White !important;
+    border-left: 3px solid lightgrey;
+    border-right: 3px solid lightgrey;
+    border-bottom: 3px solid lightgrey;
+    border-top : 3px solid lightgrey;
+    margin : 15px !important;
+    margin-left : 300px !important;
+    margin-right : 300px !important;
+    text-align : center !important;
+}
+
+.precedent, .suivant {
+    text-align: center;
+    font-size: 500% !important;
+    padding: 50px !important;
+}
+
+a {
+    color: black !important;
+}
+
 table {
     margin: 10px !important;
 }

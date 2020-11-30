@@ -20,7 +20,6 @@ $html = <<<HTML
                     <input type="text" id="annee" name="annee">
                 </div>
             </div>
-
             <input type="submit" value="Soumettre formulaire">
         </form>
     </body>
