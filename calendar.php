@@ -2,6 +2,8 @@
 
 include "calendarFunctions.php";
 
+$year = $_GET['annee'];
+
 $html = <<<HTML
 <!doctype html>
 <html lang="en">
@@ -19,15 +21,15 @@ for ($i = 0; $i < 3; $i++) {
     $html .= "<div class=\"columns\">";
     for ($j = 1; $j < 5; $j++) {
         $html .= '<div class="column is-2">';
-        $html .= calendar($i*4 + $j, 2020, True); 
+        $html .= calendar($i*4 + $j, $year, True); 
         $html .= '</div>';
     }
     $html .= "</div>";
 }
 
 $html .= <<<HTML
-        </body>
-    </html>
+    </body>
+</html>
 HTML;
 
 echo $html;
